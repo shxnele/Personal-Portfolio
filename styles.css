@@ -1,6 +1,4 @@
-/* ==========================================================
-   Shannel Igana, Portfolio
-   ========================================================== */
+
 
 *,
 *::before,
@@ -71,7 +69,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
     color: transparent;
 }
 
-/* ---------- Header ---------- */
 .header {
     position: fixed;
     inset: 0 0 auto 0;
@@ -137,7 +134,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .menu-toggle.is-open .bars::before { transform: translateY(0.9rem) rotate(45deg); }
 .menu-toggle.is-open .bars::after { transform: translateY(-0.9rem) rotate(-45deg); }
 
-/* ---------- Buttons ---------- */
 .gradient-btn,
 .btn {
     display: inline-block;
@@ -160,7 +156,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .btn-group { display: flex; flex-wrap: wrap; gap: 1.4rem; }
 .inline-btn { margin-top: 1.6rem; }
 
-/* ---------- Sections ---------- */
 section { padding: 11rem 8% 8rem; }
 section:nth-of-type(even) { background: var(--second-bg-color); }
 
@@ -187,7 +182,6 @@ section:nth-of-type(even) .card { background: var(--bg-color); }
 .card h3 { font-size: 2.2rem; margin-bottom: 1.4rem; }
 .card p + p { margin-top: 1.2rem; }
 
-/* ---------- Home ---------- */
 .home {
     min-height: 100vh;
     display: flex;
@@ -231,7 +225,6 @@ section:nth-of-type(even) .card { background: var(--bg-color); }
 }
 .social-icons a:hover { color: #fff; background: var(--main-color); transform: translateY(-4px); }
 
-/* ---------- Chips ---------- */
 .chips { display: flex; flex-wrap: wrap; gap: 0.9rem; margin: 0.4rem 0 2rem; }
 .chips li {
     font-size: 1.4rem;
@@ -242,7 +235,6 @@ section:nth-of-type(even) .card { background: var(--bg-color); }
 }
 .chips:last-child { margin-bottom: 0; }
 
-/* ---------- About ---------- */
 .about-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -261,7 +253,6 @@ section:nth-of-type(even) .card { background: var(--bg-color); }
 }
 .skills h4:first-of-type { margin-top: 0; }
 
-/* ---------- Projects ---------- */
 .project-featured {
     display: grid;
     grid-template-columns: 30rem 1fr;
@@ -457,7 +448,6 @@ code { font-family: 'Consolas', 'Courier New', monospace; font-size: 0.92em; col
 .form-status { margin-top: 1.4rem; font-size: 1.5rem; color: var(--muted-color); }
 .form-status.ok { color: #6fdc8c; }
 
-/* ---------- Footer ---------- */
 .footer {
     display: flex;
     align-items: center;
@@ -480,11 +470,9 @@ code { font-family: 'Consolas', 'Courier New', monospace; font-size: 0.92em; col
 }
 .to-top:hover { transform: translateY(-3px); }
 
-/* ---------- Scroll reveal ---------- */
 .reveal { opacity: 0; transform: translateY(2.4rem); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 1100px) {
     .home {
         flex-direction: column-reverse;
