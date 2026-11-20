@@ -1,17 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 *,
 *::before,
 *::after {
@@ -27,9 +15,9 @@
     --border-color: #2a2a2a;
     --text-color: #ffffff;
     --muted-color: #b5b5b5;
-    --main-color: #0284c7;
-    --accent-color: #15803d;
-    --gradient: linear-gradient(270deg, #15803d 10%, #0284c7 100%);
+    --main-color: #2563eb;
+    --accent-color: #2563eb;
+    --gradient: linear-gradient(270deg, #1d4ed8 10%, #60a5fa 100%);
     --radius: 1.6rem;
     --header-h: 8rem;
 }
@@ -162,9 +150,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
     color: #fff;
     white-space: nowrap;
 }
-.gradient-btn:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 0 2rem rgba(2, 132, 199, 0.45); }
+.gradient-btn:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 0 2rem rgba(37, 99, 235, 0.45); }
 .btn { border: 2px solid var(--main-color); color: var(--text-color); }
-.btn:hover { background: var(--main-color); box-shadow: 0 0 1.8rem rgba(2, 132, 199, 0.5); transform: translateY(-2px); }
+.btn:hover { background: var(--main-color); box-shadow: 0 0 1.8rem rgba(59, 130, 246, 0.5); transform: translateY(-2px); }
 .btn-group { display: flex; flex-wrap: wrap; gap: 1.4rem; }
 .inline-btn { margin-top: 1.6rem; }
 
@@ -217,7 +205,7 @@ section:nth-of-type(even) .card { background: var(--bg-color); }
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid var(--main-color);
-    box-shadow: 0 0 4rem rgba(2, 132, 199, 0.45);
+    box-shadow: 0 0 4rem rgba(37, 99, 235, 0.45);
     animation: float 6s ease-in-out infinite;
 }
 @keyframes float { 50% { transform: translateY(-1.2rem); } }
@@ -272,8 +260,8 @@ section:nth-of-type(even) .card { background: var(--bg-color); }
     align-items: center;
     max-width: 110rem;
     margin: 0 auto 3rem;
-    border-color: rgba(2, 132, 199, 0.5);
-    box-shadow: 0 0 3rem rgba(2, 132, 199, 0.12);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 3rem rgba(37, 99, 235, 0.12);
 }
 .project-visual {
     aspect-ratio: 1;
@@ -570,6 +558,14 @@ code { font-family: 'Consolas', 'Courier New', monospace; font-size: 0.92em; col
 
 .card h3:not(:first-child) { margin-top: 2.6rem; }
 You’re out of data analysis for now. Start a free Plus trial for more, or try again tomorrow after 2:55 AM.
+
+
+
+
+
+
+
+
 
 
 
