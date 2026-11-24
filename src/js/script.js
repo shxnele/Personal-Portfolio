@@ -1,17 +1,9 @@
-/* ==========================================================
-   Shannel Igana, Portfolio
-   ----------------------------------------------------------
-   EDIT THIS BLOCK: your real contact details and profiles.
-   Everything on the page that uses them updates automatically.
-   ========================================================== */
 const PROFILE = {
     email:     "shanneligana@gmail.com",
-    github:    "https://github.com/",
-    linkedin:  "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/"
+    github:    "https://github.com/shxnele",
+    instagram: "https://www.instagram.com/shxnele"
 };
 
-/* ---------- Apply profile details ---------- */
 document.querySelectorAll("[data-social]").forEach(el => {
     const url = PROFILE[el.dataset.social];
     if (url) el.href = url;
@@ -23,7 +15,6 @@ if (emailLink) {
 }
 document.getElementById("year").textContent = new Date().getFullYear();
 
-/* ---------- Mobile menu ---------- */
 const menuToggle = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
@@ -37,7 +28,6 @@ menuToggle.addEventListener("click", () => setMenu(!navbar.classList.contains("o
 navbar.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
 document.addEventListener("keydown", e => { if (e.key === "Escape") setMenu(false); });
 
-/* ---------- Highlight the current section in the nav ---------- */
 const navLinks = [...navbar.querySelectorAll("a")];
 const sections = navLinks
     .map(a => document.querySelector(a.getAttribute("href")))
@@ -52,7 +42,6 @@ function updateActiveLink() {
 window.addEventListener("scroll", updateActiveLink, { passive: true });
 updateActiveLink();
 
-/* ---------- Reveal on scroll ---------- */
 const revealTargets = document.querySelectorAll(".card, .section-head");
 if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(entries => {
@@ -66,9 +55,6 @@ if ("IntersectionObserver" in window) {
     revealTargets.forEach(el => { el.classList.add("reveal"); io.observe(el); });
 }
 
-/* ---------- Contact form ----------
-   This is a static site, so there is no server to receive the form.
-   On submit, the message opens in the visitor's email app, addressed to you. */
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
 
